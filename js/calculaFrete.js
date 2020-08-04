@@ -1,5 +1,5 @@
 function processaValores(){
-    limparValoresDaTela();
+    limpaValoresDaTela();
 
     var quilometragemDoVeiculo = document.getElementById('quilometragemDoVeiculo').value;
     var precoDaGasolina = document.getElementById('precoDaGasolina').value;
@@ -13,7 +13,7 @@ function processaValores(){
     }else exibeErroDosCampos();
 }
 
-function limparValoresDaTela(){
+function limpaValoresDaTela(){
     document.getElementById('preco').innerHTML = '';
 }
 
