@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes da Tatay</title>
+    <link rel="shortcut icon" href="imgs/logo.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="js/calculaFrete.js"></script>
+</head>
+<body>
+<h2>Sistema para Calcular frete em Cakes da Tatay</h2>
+<h3><a href="http://www.google.com.br" target="_blank">Clique aqui para consultar o manual de utilização</a></h3>
+<img src="imgs/entrega.png" width="450">
+<form>
+    <div>
+        <strong>Distancia dos endereços em KM</strong>
+        <input type="number" class="form-control" id="distanciaEmKm" placeholder="Distancia dos endereços em KM">
+    </div>
+    <br>
+    <div>
+        <strong>Quantos quilômetros o veículo de entrega faz por litro?</strong>
+        <input type="number" class="form-control" id="quilometragemDoVeiculo"
+               placeholder="Quantos quilômetros o veículo de entrega faz por litro?">
+    </div>
+    <br>
+    <div>
+        <strong>Qual preço da gasolina?</strong>
+        <input type="number" class="form-control" id="precoDaGasolina" placeholder="Qual preço da gasolina?">
+    </div>
+    <br>
+    <button onclick="processaValores()" type="button" class="btn btn-primary">Calcular frete</button>
+</form>
+<h3 id="preco"></h3>
+<footer id="fimDaPagina">
+    Desenvolvido por Arthur dos Santos Almeida
+</footer>
+</body>
+</html>
